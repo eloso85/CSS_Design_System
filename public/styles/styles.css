@@ -1,4 +1,28 @@
+/* -------------------- */
+/* Custom Properties End */
+/* -------------------- */
+
+:root {
+    --clr-dark:230 35% 7%;
+    --clr-light:231 77% 90%;
+    --clr-white:0 0% 100%;
+
+}
+
+
+
+
+/* -------------------- */
+/* Custom Properties End */
+/* -------------------- */
+
+
+
+
+
+/* ------------------- */
 /* General Reset */
+/* -------------------- */
 
 /* Box sizing */
 
@@ -62,3 +86,60 @@ select {
   }
 
 /* General Reset End */
+
+
+/* -------------------- */
+/* Utility Classes */
+/* -------------------- */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0,);
+    white-space: nowrap;
+    border: 0;
+}
+/* -------------------- */
+/* Utility Classes End */
+/* -------------------- */
+
+
+/* -------------------- */
+/* Utility Colors RGB/ HSL */
+/* -------------------- */
+
+
+.bg-dark { background-color: hsl(var(--clr-dark));}
+.bg-accent { background-color: hsl(var(--clr-lite));}
+.bg-white { background-color: hsl(var(--clr-white));}
+
+.text-dark { background-color: hsl(var(--clr-dark));}
+.text-accent { background-color: hsl(var(--clr-lite));}
+.text-white { background-color: hsl(var(--clr-white));}
+
+
+
+
+/* -------------------- */
+/* Utility Colors End */
+/* -------------------- */
